@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { SelectedPage } from '@/shared/types'
 
 
+
 function App() {
   
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home)
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className='bg-gray-20 '>
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-      <Home setSelectedPage={selectedPage}/>
+      <Home setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
